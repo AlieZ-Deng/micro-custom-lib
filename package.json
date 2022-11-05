@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "release": "node ./release/index.js",
+    "release": "node ./release_cli/index.js",
     "patch": "npm run release -- patch",
     "major": "npm run release -- major",
-    "minor": "npm run release -- minor",
-    "commit-lint": "node ./commitlint.js"
+    "minor": "npm run release -- minor"
   },
   "keywords": [],
   "author": "",
