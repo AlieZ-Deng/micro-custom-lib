@@ -8,7 +8,8 @@
     "release": "node ./release/index.js",
     "patch": "npm run release -- patch",
     "major": "npm run release -- major",
-    "minor": "npm run release -- minor"
+    "minor": "npm run release -- minor",
+    "commit-lint": "node ./commitlint.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,16 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/jest": "29.2.2",
+    "@typescript-eslint/eslint-plugin": "5.42.0",
+    "@typescript-eslint/parser": "5.42.0",
+    "eslint": "8.26.0",
+    "eslint-config-alloy": "4.7.0",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "4.8.4"
   }
 }

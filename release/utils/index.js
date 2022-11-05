@@ -62,8 +62,8 @@ const step = (command) => {
         }
       }
     );
-    childExec.stdout?.pipe(process.stdout);
-    childExec.stderr?.pipe(process.stderr);
+    childExec.stdout.pipe(process.stdout);
+    childExec.stderr.pipe(process.stderr);
   });
 };
 

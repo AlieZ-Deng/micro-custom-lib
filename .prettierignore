@@ -1,0 +1,6 @@
+dist
+coverage
+node_models
+package.json
+*-lock.json
+*-lock.yaml

@@ -1,3 +1,5 @@
-console.log('init2')
+console.log('init2 ');
 
-console.log('pre-version')
+const a = '1';
+
+console.log('pre-version');
