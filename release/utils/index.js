@@ -81,7 +81,7 @@ const pushCode = async (version) => {
 const tagVersion = async (version) => {
   const command = [`git tag v${version}`, "git push --tag"];
   await step(command);
-  console.log(`---------- 推送版本到仓库 ----------`);
+  console.log(`---------- 推送 tag 版本到仓库 ----------`);
   return version;
 };
 
