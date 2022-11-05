@@ -75,10 +75,26 @@ const pushCode = async (version) => {
   ];
   await step(command);
   console.log(`---------- 推送代码到仓库 ----------`);
+  return version;
 };
 
-const tagVersion = () => {};
+const tagVersion = async (version) => {
+  const command = [`git tag v${version}`, "git push --tag"];
+  await step(command);
+  console.log(`---------- 推送版本到仓库 ----------`);
+  return version;
+};
 
-const publishPackage = () => {};
+const publishPackage = async (version) => {
+  const command = ["npm publish"];
+  await step(command);
+  console.log(`---------- 推送包v${version}到 npm ----------`);
+};
 
-module.exports = { getVersion, changeVersion, pushCode };
+module.exports = {
+  getVersion,
+  changeVersion,
+  pushCode,
+  tagVersion,
+  publishPackage,
+};
