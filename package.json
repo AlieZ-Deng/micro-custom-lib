@@ -8,7 +8,9 @@
     "release": "node ./release_cli/index.js",
     "patch": "npm run release -- patch",
     "major": "npm run release -- major",
-    "minor": "npm run release -- minor"
+    "minor": "npm run release -- minor",
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.2.0",
     "@commitlint/config-conventional": "17.2.0",
+    "@swc/core": "1.3.14",
     "@types/jest": "29.2.2",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
@@ -32,6 +35,7 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "ts-jest": "27.1.4",
+    "tsup": "6.4.0",
     "typescript": "4.8.4"
   }
 }
